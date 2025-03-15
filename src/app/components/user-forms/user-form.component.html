@@ -1,0 +1,10 @@
+<form [formGroup]="userForm" (ngSubmit)="submit()">
+  <app-username [parentForm]="userForm"></app-username>
+  <app-email [parentForm]="userForm"></app-email>
+  <app-type [parentForm]="userForm"></app-type>
+  <app-password [parentForm]="userForm"></app-password>
+  <button type="submit" [disabled]="userForm.invalid || loading()">
+    <span class="button-text">{{ loading() ? 'Submitting' : 'Submit' }}</span>
+    <span class="spinner" *ngIf="loading()"></span>
+  </button>
+</form>
