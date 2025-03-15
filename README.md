@@ -11,6 +11,16 @@ This Angular application showcases advanced features and best practices, includi
 - **OnPush Change Detection**: Applies the OnPush change detection strategy to optimize performance by reducing unnecessary checks.
 - **Loading and Disabled States**: Manages loading indicators and disables form inputs during asynchronous operations to enhance user experience.
 
+## Running the Application locally
+
+- Install the dependencies using `npm install`.
+- Run the application using `ng serve` or `npm start`.
+
+## Running the Application using Docker
+
+- Build docker image `docker build -t angular-challenge .`
+- Run docker container `docker run -d -p 80:80 angular-challenge`
+
 ## Global Error Handling
 
 The application leverages Angular's `ErrorHandler` class to implement a global error handling strategy. This approach ensures that all uncaught errors are captured and processed uniformly.
