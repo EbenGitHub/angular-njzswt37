@@ -19,7 +19,7 @@ This Angular application showcases advanced features and best practices, includi
 ## Running the Application using Docker
 
 - Build docker image `docker build -t angular-challenge .`
-- Run docker container `docker run -d -p 80:80 angular-challenge`
+- Run docker container `docker run -p 80:80 angular-challenge`
 
 ## Global Error Handling
 
